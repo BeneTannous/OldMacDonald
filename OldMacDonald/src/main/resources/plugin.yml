@@ -1,0 +1,36 @@
+name: OldMacDonald
+version: '1.2.1'
+main: me.mooseman06.oldmacdonald.OldMacDonald
+api-version: '1.20'
+commands:
+  OMD:
+    description: Manage OldMacDonald plugin. Set farm location to current or specified coordinates.
+    usage: /OMD help
+    aliases:
+      - OldMacDonald
+    tab-completer: me.mooseman06.oldmacdonald.OldMacDonaldTabCompleter
+depend:
+  - KeepChunks
+
+permissions:
+  oldmacdonald.addfarm:
+    description: Add a farm to be active when players aren't nearby.
+    default: true
+  oldmacdonald.removefarm:
+    description: Remove a farm from the existing farms list.
+    default: true
+  oldmacdonald.listfarms:
+    description: Display a list of all active farms on the server.
+    default: true
+  oldmacdonald.setmaxradius:
+    description: Change the maximum allowed radius of the farms on the server
+    default: op
+  oldmacdonald.setdefaultradius:
+    description: Change the default radius of farms on the server
+    default: op
+  oldmacdonald.setmaxmobs:
+    description: Set the maximum allowed number of mobs per farm
+    default: op
+  oldmacdonald.feedback:
+    description: Provides a link to report bugs and give feedback
+    default: true
